@@ -1,0 +1,47 @@
+﻿Nomes: Marcelo Oliveira
+
+CREATE TABLE IF NOT EXISTS `aprof`.`professores` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NULL DEFAULT NULL,
+  `telefone` VARCHAR(45) NULL DEFAULT NULL,
+  `valor_hora_aula` FLOAT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `aprof`.`cursos` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `carga_horaria` VARCHAR(45) NULL DEFAULT NULL,
+  `conteudo` VARCHAR(45) NULL DEFAULT NULL,
+  `nome` VARCHAR(45) NULL DEFAULT NULL,
+  `valor` FLOAT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `aprof`.`turmas` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `data_inicio` VARCHAR(45) NULL DEFAULT NULL,
+  `data_fim` VARCHAR(45) NULL DEFAULT NULL,
+  `hora_inicio` VARCHAR(45) NULL DEFAULT NULL,
+  `hora_fim` VARCHAR(45) NULL DEFAULT NULL,
+  `cursos_id` INT(11) NOT NULL,
+  `professores_id` INT(11) NOT NULL,
+  PRIMARY KEY (`id`, `cursos_id`, `professores_id`),
+  INDEX `fk_turmas_cursos_idx` (`cursos_id` ASC),
+  INDEX `fk_turmas_professores1_idx` (`professores_id` ASC),
+  CONSTRAINT `fk_turmas_cursos`
+    FOREIGN KEY (`cursos_id`)
+    REFERENCES `aprof`.`cursos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_turmas_professores1`
+    FOREIGN KEY (`professores_id`)
+    REFERENCES `aprof`.`professores` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;

@@ -1,0 +1,5 @@
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Data\bin\Debug\AProf.Data.dll
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Data\bin\Debug\AProf.Data.pdb
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Data\obj\Debug\AProf.Data.dll
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Data\obj\Debug\AProf.Data.pdb
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Data\obj\Debug\AProf.Data.csprojResolveAssemblyReference.cache

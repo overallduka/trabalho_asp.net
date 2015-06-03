@@ -1,0 +1,10 @@
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\bin\Debug\AProf.Repository.dll
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\bin\Debug\AProf.Repository.pdb
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\bin\Debug\mysql.data.dll
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\bin\Debug\MySQLConnection.dll
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\bin\Debug\MySQLConnection.pdb
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\obj\Debug\AProf.Repository.dll
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\obj\Debug\AProf.Repository.pdb
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\bin\Debug\AProf.Data.dll
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\bin\Debug\AProf.Data.pdb
+\\vmware-host\Shared Folders\Desktop\OO2\Aprof\AProf.Repository\obj\Debug\AProf.Repository.csprojResolveAssemblyReference.cache
